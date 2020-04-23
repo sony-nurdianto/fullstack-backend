@@ -12,7 +12,7 @@ var usersRouter = require("./routes/users");
 const HeroesRouter = require("./routes/HeroesRouter");
 
 var app = express();
-mongodConnect = process.env.MONGOURI;
+mongodConnect = process.env.DB_CONNECTION;
 mongoose.connect(mongodConnect, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
