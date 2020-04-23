@@ -13,7 +13,7 @@ const HeroesRouter = require("./routes/HeroesRouter");
 
 var app = express();
 mongodConnect = process.env.MONGOURI;
-mongoose.connect("mongodb://localhost/heroes", {
+mongoose.connect(mongodConnect, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
